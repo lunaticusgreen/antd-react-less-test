@@ -1,6 +1,5 @@
 import React from "react";
 import { Collapse } from "antd";
-import "antd/dist/antd.css"; // Import Ant Design styles by less entry
 const { Panel } = Collapse;
 
 function callback(key) {
@@ -15,7 +14,7 @@ const text = `
 
 function App() {
   return (
-    <div className="App">
+    <div className="strange-wrapper">
       <Collapse defaultActiveKey={["1"]} onChange={callback}>
         <Panel header="This is panel header 1" key="1">
           <p>{text}</p>
